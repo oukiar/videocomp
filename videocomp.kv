@@ -1,0 +1,17 @@
+
+<VideoComp>:
+    video1:video1
+    video2:video2
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            Video:
+                id: video1
+            Video:
+                id: video2
+        
+        Button:
+            size_hint_y: None
+            text: "Pausa"
+            on_release: root.pausa()
+    
